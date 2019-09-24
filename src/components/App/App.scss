@@ -1,9 +1,30 @@
 @import "~antd/dist/antd.css";
 
-.App {
-  text-align: center;
+.app-container1  {
+  margin: 2%;
 }
 
-.App-link {
-  color: #09d3ac;
+.carrousel-container {
+  flex-direction: "row";
+  width: 100%;
+}
+
+.carrousel {
+  width: 70%;
+}
+
+.card-events {
+  margin-top: 1%;
+  width: 100%;
+}
+
+.sider-container  {
+  margin-right: 1%;
+  width: 20%;
+  height: 100%;
+}
+
+.sider {
+  color: white;
+  height: 100%;
 }
