@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Row>
-        <div style={{ margin: "10px 0px" }}>
+        <div className="cardMargin">
           <Row type="flex" justify="space-around">
             <Col span={4}>
               <NewsCard />
@@ -35,7 +35,7 @@ function App() {
                   <CarouselNews />
                 </div>
                 <div>
-                  <div style={{ margin: "10px 0px" }}>
+                  <div className="cardMargin">
                     <Row gutter={48}>
                       <Col span={6}>
                         <NewsCard />
@@ -51,7 +51,7 @@ function App() {
                       </Col>
                     </Row>
                   </div>
-                  <div style={{ margin: "10px 0px" }}>
+                  <div className="cardMargin">
                     <Row gutter={48}>
                       <Col span={6}>
                         <NewsCard />

@@ -44,21 +44,21 @@ const CarouselNews = () => {
     }
   ];
   return (
-    <Carousel style={{ overflow: "hidden", background: "grey" }}>
+    <Carousel style={{ background: "grey" }}>
       {news.map(({ img, title, description, tags }) => (
         <>
           <Row gutter={8} key={title}>
-            <Col span={8}>
-              <img width="100%" src={img} alt="news" />
+            <Col span={6}>
+              <div className="img">
+                <img src={img} alt="news" />
+              </div>
             </Col>
-            <Col span={16}>
-              <div>
+            <Col span={17} offset={1}>
+              <div className="content">
                 <h2>{title}</h2>
-                <p>{description}</p>
-                <p>
-                  {tags.map((tag, ind) => (
-                    <Tag key={ind}>{tag}</Tag>
-                  ))}
+                <p className="description">{description}</p>
+                <p className="tags">
+                  {tags.map((tag, ind) => <Tag key={ind}>{tag}</Tag>)}
                 </p>
               </div>
             </Col>
