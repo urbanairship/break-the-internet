@@ -44,28 +44,34 @@ const CarouselNews = () => {
     }
   ];
   return (
-    <Carousel style={{ background: "grey" }}>
-      {news.map(({ img, title, description, tags }) => (
-        <>
-          <Row gutter={8} key={title}>
-            <Col span={6}>
-              <div className="img">
-                <img src={img} alt="news" />
-              </div>
-            </Col>
-            <Col span={17} offset={1}>
-              <div className="content">
-                <h2>{title}</h2>
-                <p className="description">{description}</p>
-                <p className="tags">
-                  {tags.map((tag, ind) => <Tag key={ind}>{tag}</Tag>)}
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </>
-      ))}
-    </Carousel>
+      <Carousel>
+        {news.map(({ img, title, description, tags }, index) => (
+            <div className="carrousel" key={index}>
+              <Row gutter={8} key={title}>
+                <Col span={6}>
+                  <div className="img">
+                    <img src={img} alt="news" />
+                  </div>
+                </Col>
+                <Col span={17} offset={1}>
+                  <div className="content">
+                  <Row>
+                    <h2>{title}</h2>
+                  </Row>
+                  <Row>
+                    <p className="description">{description}</p>
+                  </Row>
+                  <Row>
+                    <p className="tags">
+                      {tags.map((tag, i) => <Tag key={i}>{tag}</Tag>)}
+                    </p>
+                  </Row>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+        ))}
+      </Carousel>
   );
 };
 
