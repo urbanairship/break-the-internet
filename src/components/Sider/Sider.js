@@ -23,7 +23,7 @@ const mockArticles = [
 ]
 
 const mockTags = [
-  "migration" , "segmentatio", "aggregate", "web push", "mobile"
+  "migration" , "segmentation", "aggregate", "web push", "mobile"
 ];
 
 const mockProjects = ["Segmentation", "migration", "mobile"];
