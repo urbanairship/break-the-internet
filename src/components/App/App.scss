@@ -36,5 +36,20 @@
 }
 
 .cardMargin {
-  margin: 30px 0px;
+  margin: 10px 0px;
+}
+
+.more {
+  float: right;
+  a {
+    color: #000000;
+    font-weight: 900;
+  }
+  a:hover {
+    text-decoration:underline;
+  }
+}
+
+h3.title {
+  font-weight: 900;
 }
