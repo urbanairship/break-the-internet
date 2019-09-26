@@ -60,36 +60,42 @@ const CarouselNews = () => {
     }
   ];
   return (
-      <Carousel>
-        {news.map(({ img, title, description, tags }, index) => (
-            <div className="carousel" key={index}>
-            <Row key={title}>
-              <Col span={9}>
+    <Carousel>
+      {news.map(({ img, title, description, tags }, index) => (
+        <div className="carousel" key={index}>
+          <Row key={title}>
+            <Col span={9}>
               <div className="img">
                 <img src={img} alt="news" />
               </div>
-              </Col>
-              <Col span={15} className="carousel-content">
+            </Col>
+            <Col span={15} className="carousel-content">
               <div className="box-shadow">
                 <div className="text">
                   <h3 className="title">{title}</h3>
                   <div className="description">
-                    {description.length > 630 ? description.slice(0, 630) + '...': description}
-                    </div>
-                    <div className="tags">
-                      <h4>Related tags</h4>
-                      {tags.map((tag, i) => <Tag key={i}>{tag}</Tag>)}
-                    </div>
-                    <div className="seeAll">
-                      <h4><a href="#">See all articles</a></h4>
-                    </div>
+                    {description.length > 630
+                      ? description.slice(0, 630) + "..."
+                      : description}
+                  </div>
+                  <div className="tags">
+                    <h4>Related tags</h4>
+                    {tags.map((tag, i) => (
+                      <Tag key={i}>{tag}</Tag>
+                    ))}
+                  </div>
+                  <div className="see-all">
+                    <h4>
+                      <a href="#">See all articles</a>
+                    </h4>
+                  </div>
                 </div>
               </div>
-              </Col>
-            </Row>
-            </div>
-        ))}
-      </Carousel>
+            </Col>
+          </Row>
+        </div>
+      ))}
+    </Carousel>
   );
 };
 

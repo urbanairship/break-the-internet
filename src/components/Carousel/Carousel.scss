@@ -16,9 +16,9 @@ h4 {
   height: 350px;
   border-right: 1px solid #CFCFCF;
 
-  .seeAll {
+  .see-all {
     position: fixed;
-    margin-left: 510px;
+    margin-left: 6.4%;
     bottom: 30px;
 
     a {
@@ -26,12 +26,6 @@ h4 {
     }
   }
 
-  .box-shadow {
-    -webkit-box-shadow: 200px 4px 5px 0px rgba(119,136,153,1);
-    -moz-box-shadow: 0px 4px 5px 0px rgba(119,136,153,1);
-    box-shadow: 0px 4px 5px 0px rgba(119,136,153,1);
-    height: 100%;
-  }
   .text {
     margin-left: 50px;
     padding: 55px;

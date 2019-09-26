@@ -1,7 +1,11 @@
 @import "~antd/dist/antd.css";
 
-.app-container1  {
-  margin: 2%;
+.card-timezone {
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 1px;
+  width: 90%;
+  margin: auto;
 }
 
 .carrousel-container {
@@ -18,25 +22,8 @@
   width: 100%;
 }
 
-.sider-container  {
-  margin-right: 1%;
-  width: 20%;
-  height: 100%;
-}
-
-.sider {
-  color: white;
-  height: 100%;
-}
-
 .footer {
-  bottom: 0;
-  position: fixed;
   width: 100%;
-}
-
-.cardMargin {
-  margin: 10px 0px;
 }
 
 .more {
@@ -46,10 +33,19 @@
     font-weight: 900;
   }
   a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
   }
 }
 
-h3.title {
+h2.title {
+  margin: 25px 0px 10px 0px;
   font-weight: 900;
+  font-size: 2em;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 200px 4px 5px 0px rgba(119, 136, 153, 1);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(119, 136, 153, 1);
+  box-shadow: 0px 4px 5px 0px rgba(119, 136, 153, 1);
+  height: 100%;
 }
