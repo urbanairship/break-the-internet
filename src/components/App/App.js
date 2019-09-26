@@ -1,28 +1,31 @@
 import React from "react";
 import NewsCard from "../NewsCard/NewsCard";
-import {CarouselNews} from '../Carousel';
+import { CarouselNews } from "../Carousel";
+import { ClockNews } from "../ClockNews";
 import { Layout, Row, Col } from "antd";
 import "./App.scss";
 
 function App() {
   const { Sider, Footer } = Layout;
-
   return (
     <div>
       <Row>
         <div className="cardMargin">
           <Row type="flex" justify="space-around">
             <Col span={4}>
-              <NewsCard />
+              <ClockNews cardTitle="Portland" timezone="America/Vancouver" />
             </Col>
             <Col span={4}>
-              <NewsCard />
+              <ClockNews cardTitle="Paris" timezone="Europe/Paris" />
             </Col>
             <Col span={4}>
-              <NewsCard />
+              <ClockNews cardTitle="Londres" timezone="Europe/London" />
             </Col>
             <Col span={4}>
-              <NewsCard />
+              <ClockNews
+                cardTitle="San Francisco"
+                timezone="America/New_York"
+              />
             </Col>
           </Row>
         </div>
