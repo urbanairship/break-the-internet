@@ -1,0 +1,59 @@
+.sider {
+  margin-top: 32px;
+  // height: 550px !important;
+  background: #FFFFFF;
+  border: 2px solid #E7E7E7;
+
+  .title {
+    background: #FFFFFF;
+    background-color: #E7E7E7;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: 5px;
+
+  }
+  .items{
+    background: #FFFFFF;   
+  }
+
+  .articles {
+    .date {
+      font-size: 0.9em;
+      opacity: 0.4;
+    }
+    .item {
+      margin: 30px 40px;
+      color: #000000;
+      &:first-child .separator {
+        display: none;
+      }
+      .separator {
+        border-top: 3px solid #E7E7E7;
+        margin: 20px 0px;
+      }
+    }
+  }
+
+  .tags {
+    .items {
+      margin : 25px 25px;
+    }
+    .ant-tag {
+      background: #0026EB;
+      color: #FFFFFF;
+    }
+  }
+
+  .projects {
+    min-height: 100px;
+
+      .items {
+        margin-top: 20px;
+
+        li::first-letter {
+          text-transform: uppercase;
+        }
+      }
+  }
+}

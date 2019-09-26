@@ -1,6 +1,7 @@
 import React from "react";
 import NewsCard from "../NewsCard/NewsCard";
 import {CarouselNews} from '../Carousel';
+import { SiderContent } from '../Sider';
 import { Layout, Row, Col } from "antd";
 import "./App.scss";
 
@@ -80,20 +81,7 @@ function App() {
                 </div>
               </Col>
               <Col span={6} offset={1}>
-                <div style={{marginTop: 32}}>
-                  <Sider width="100%">
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                    <p>Card content</p>
-                  </Sider>
-                </div>
+                <SiderContent />
               </Col>
             </Row>
           </div>
