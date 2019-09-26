@@ -6,7 +6,7 @@ import { Layout, Row, Col } from "antd";
 import "./App.scss";
 
 function App() {
-  const { Sider, Footer } = Layout;
+  const { Footer } = Layout;
 
   return (
     <div>
@@ -30,18 +30,18 @@ function App() {
         <div style={{ maxHeight: "100px" }}>
           <div>
             <Row>
-              <Col span={15} offset={1}>
-                <h3 className="title">
+              <Col span={17} offset={1}>
+                <h2 className="title">
                   Top articles
-                </h3>
+                </h2>
                 <div>
                   <CarouselNews />
                 </div>
                 <div>
-                  <div className="cardMargin">
-                    <h3>
+                  <div className="events">
+                    <h2 className="title">
                       Events
-                    </h3>
+                    </h2>
                     <Row gutter={48}>
                       <Col span={6}>
                         <NewsCard />
@@ -58,10 +58,10 @@ function App() {
                     </Row>
                     <p className="more"><a href="#">see more...</a></p>
                   </div>
-                  <div className="cardMargin">
-                    <h3>
+                  <div className="social">
+                    <h2 className="title">
                       Social media community
-                    </h3>
+                    </h2>
                     <Row gutter={48}>
                       <Col span={6}>
                         <NewsCard />
@@ -80,7 +80,7 @@ function App() {
                   </div>
                 </div>
               </Col>
-              <Col span={6} offset={1}>
+              <Col span={4} offset={1}>
                 <SiderContent />
               </Col>
             </Row>

@@ -80,7 +80,7 @@ const CarouselNews = () => {
                       <h4>Related tags</h4>
                       {tags.map((tag, i) => <Tag key={i}>{tag}</Tag>)}
                     </div>
-                    <div className="seeAll">
+                    <div className="see-all">
                       <h4><a href="#">See all articles</a></h4>
                     </div>
                 </div>
