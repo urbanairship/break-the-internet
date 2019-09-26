@@ -26,16 +26,21 @@ function App() {
             </Col>
           </Row>
         </div>
-
         <div style={{ maxHeight: "100px" }}>
           <div>
             <Row>
               <Col span={15} offset={1}>
+                <h3 className="title">
+                  Top articles
+                </h3>
                 <div>
                   <CarouselNews />
                 </div>
                 <div>
                   <div className="cardMargin">
+                    <h3>
+                      Events
+                    </h3>
                     <Row gutter={48}>
                       <Col span={6}>
                         <NewsCard />
@@ -50,8 +55,12 @@ function App() {
                         <NewsCard />
                       </Col>
                     </Row>
+                    <p className="more"><a href="#">see more...</a></p>
                   </div>
                   <div className="cardMargin">
+                    <h3>
+                      Social media community
+                    </h3>
                     <Row gutter={48}>
                       <Col span={6}>
                         <NewsCard />
@@ -66,11 +75,12 @@ function App() {
                         <NewsCard />
                       </Col>
                     </Row>
+                    <p className="more"><a href="#">see more...</a></p>
                   </div>
                 </div>
               </Col>
               <Col span={6} offset={1}>
-                <div>
+                <div style={{marginTop: 32}}>
                   <Sider width="100%">
                     <p>Card content</p>
                     <p>Card content</p>
