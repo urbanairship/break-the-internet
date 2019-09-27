@@ -39,7 +39,7 @@ const SiderContent = () => {
               <div className="items">
                 {
                   mockArticles.slice(0, 4).map(({date, title}, i) => (
-                    <div className="item">
+                    <div className="item" key={i}>
                       <div className="separator"></div>
                       <Row key={i}>
                         <Col span={4}>
@@ -69,7 +69,7 @@ const SiderContent = () => {
               Most Popular Projects
             </div>
             <ul className="items">
-              { mockProjects.map((name, i) => (<li> {name}</li>))}
+              { mockProjects.map((name, i) => (<li key={i}> {name}</li>))}
             </ul>
           </div>
         </div>
