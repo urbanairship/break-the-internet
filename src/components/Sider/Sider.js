@@ -47,7 +47,7 @@ const SiderContent = () => {
                             {date}
                           </div>
                         </Col>
-                        <Col span={20}>
+                        <Col span={19} offset={1}>
                           {title.length > 90 ? title.slice(0, 90) + '...': title}
                         </Col>
                       </Row>

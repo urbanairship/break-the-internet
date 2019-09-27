@@ -9,7 +9,7 @@ import cko from '../../assets/images/cko.png';
 const datasource = [
   {
     img : monday,
-    title: 'Happy monday',
+    title: 'happymonday',
     subtitle: 125,
     corner: instagram
   },
